@@ -1,0 +1,264 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.full-page {
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 40px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 50px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+	transition: all 0.3s linear;
+}
+nav ul li button {
+	font-size: 20px;
+	color: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+nav ul li button:hover {
+	color: black;
+}
+nav ul li a:hover {
+	color: black;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 36px;
+}
+
+.form-box {
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 2% auto;
+	background: rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.button-box {
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #f3c693;
+	border-radius: 30px;
+	transition: 0.5s;
+}
+.input-group-login {
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+.input-group-register {
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.submit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #f3c693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box {
+	margin: 30px 10px 34px 0;
+}
+span {
+	color: #fff;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+#login {
+	left: 50px;
+}
+#login input {
+	color: white;
+	font-size: 15px;
+}
+input::placeholder {
+	color: #fff;
+	opacity: 0.4;
+}
+#register {
+	left: 450px;
+}
+#register input {
+	color: white;
+	font-size: 15px;
+}
+
+.main-area {
+	background: linear-gradient(to left, #ff9966, #ff5e62);
+	width: 100%;
+	height: 100vh;
+}
+.circles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 1;
+		border-radius: 0;
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		opacity: 0;
+		border-radius: 50%;
+		transform: translateY(-1000px) rotate(720deg);
+	}
+}
+
+.circles div {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	bottom: -150px;
+	animation: animate 25s linear infinite;
+}
+
+.circles div:nth-child(1) {
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.circles div:nth-child(2) {
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+	animation-duration: 12s;
+}
+.circles div:nth-child(3) {
+	left: 70%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 4s;
+}
+.circles div:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+}
+.circles div:nth-child(5) {
+	left: 65%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 0s;
+}
+.circles div:nth-child(6) {
+	left: 75%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3s;
+}
+.circles div:nth-child(7) {
+	left: 35%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 7s;
+}
+.circles div:nth-child(8) {
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 15s;
+	animation-duration: 45s;
+}
+.circles div:nth-child(9) {
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+
+.circles div:nth-child(10) {
+	left: 85%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
